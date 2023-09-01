@@ -4,10 +4,10 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 
-import Home from "./components/pageHome"
-import Error from "./components/pageError"
-import Produtos from "./components/pageProdutos"
-import EditarProduto from "./components/pageEditarProduto"
+import Home from "./routes/pageHome"
+import Error from "./routes/pageError"
+import Produtos from "./routes/pageProdutos"
+import EditarProduto from "./routes/pageEditarProduto"
 
 const router = createBrowserRouter([
   {
@@ -15,9 +15,9 @@ const router = createBrowserRouter([
     element:<App/>,
     errorElement: <Error/>,
     children:[
-      {path : "/home", element: <Home/>},
+      {path : "/", element: <Home/>},
       {path : "/produtos", element: <Produtos/>},
-      {path : "/editarproduto", element: <EditarProduto/>}
+      {path : "/editar/produto/:id", element: <EditarProduto/>}
     ]
 
   }
