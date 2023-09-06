@@ -17,6 +17,9 @@ export default function Cabecalho(){
                     <li>
                         <Link to="/editar/produto/1">Editar Produto</Link>
                     </li>
+                    <li>
+                        <Link to="/excluir/produto/1">Excluir Produto</Link>
+                    </li>
                 
                 </ul>
             </header>
